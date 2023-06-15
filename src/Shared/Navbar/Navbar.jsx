@@ -9,20 +9,20 @@ const Navbar = () => {
   let user = null;
 
   return (
-    <nav>
+    <nav className="main-nav">
       <div className="navbar">
-        <NavLink to="/" className="nav-item nav-logo">
+        <Link to="/" className="nav-item nav-logo">
           <img src={Logo} alt="" />
-        </NavLink>
-        <NavLink className="nav-item nav-btn" to="/">
+        </Link>
+        <Link className="nav-item nav-btn" to="/">
           About
-        </NavLink>
-        <NavLink className="nav-item nav-btn" to="/">
+        </Link>
+        <Link className="nav-item nav-btn" to="/">
           Products
-        </NavLink>
-        <NavLink className="nav-item nav-btn" to="/">
+        </Link>
+        <Link className="nav-item nav-btn" to="/">
           For Teams
-        </NavLink>
+        </Link>
         <form>
           <input type="text" placeholder="Search..." />
           <FaSearch className="search-icon" />
