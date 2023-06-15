@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/Stack_Overflow-Logo.png";
 import { FaSearch } from "react-icons/fa";
 import Avatar from "../../Components/Avatar/Avatar";
