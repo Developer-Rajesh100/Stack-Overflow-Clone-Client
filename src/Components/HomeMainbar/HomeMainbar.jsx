@@ -10,23 +10,44 @@ const HomeMainbar = () => {
 
   let questionsList = [
     {
-      id: 1,
-      votes: 3,
+      _id: 1,
+      upVotes: 3,
+      downVotes: 2,
+      noOfAnswers: 2,
       questionTitle: "What is a function?",
-      no0fAnswers: 2,
       questionBody: "It meant to be",
       questionTags: ["java", "node js", "react js", "mangoDB"],
+      userPosted: "mano",
+      userId: 1,
       askedOn: "jan 1",
+      answer: [
+        {
+          answerBody: "Answer",
+          answeredOn: "jan 2",
+          userAnswered: "kumar",
+          userId: 2,
+        },
+      ],
     },
     {
-      id: 2,
-      votes: 0,
-      no0fAnswers: 0,
+      _id: 2,
+      upVotes: 3,
+      downVotes: 2,
+      noOfAnswers: 0,
       questionTitle: "What is a function?",
       questionBody: "It meant to be",
       questionTags: ["javascript", "R", "python"],
-      askedOn: "jan 1",
       userPosted: "mano",
+      userId: 1,
+      askedOn: "jan 1",
+      answer: [
+        {
+          answerBody: "Answer",
+          answeredOn: "jan 2",
+          userAnswered: "kumar",
+          userId: 2,
+        },
+      ],
     },
   ];
 
@@ -35,7 +56,7 @@ const HomeMainbar = () => {
       alert("Login or Signup to ask a question");
       navigate("/Auth");
     } else {
-      navigate("/AskQuesion");
+      navigate("/AskQuestion");
     }
   };
 
